@@ -6,9 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <PackageReference Include="MudBlazor" Version="6.7.0" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="1.0.8" />
   </ItemGroup>
 
+=======
+>>>>>>> 05d4eea (Creating new project of support)
 </Project>

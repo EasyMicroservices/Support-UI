@@ -26,7 +26,10 @@
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+<<<<<<< HEAD
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
+=======
+>>>>>>> 05d4eea (Creating new project of support)
