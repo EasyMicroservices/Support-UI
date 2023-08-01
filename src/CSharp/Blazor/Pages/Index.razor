@@ -1,0 +1,27 @@
+﻿@page "/"
+
+<PageTitle>ثبت تیکت</PageTitle>
+
+<div class="mainAddTicket container">
+    <MudGrid>
+        <MudItem xs="12" sm="6">
+            <MudTextField @bind-Value="TextValue" Label="عنوان" Variant="Variant.Outlined"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudSelect T="double" Label="دپارتمان" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                <MudSelectItem T="double" Value="4.50" />
+                <MudSelectItem T="double" Value="4.99" />
+                <MudSelectItem T="double" Value="3.60" />
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="12">
+            <MudTextField T="string" Label="شرح درخواست" Variant="Variant.Outlined" Text="@sampleText" Lines="3" />
+        </MudItem>
+        
+    </MudGrid>
+</div>
+
+@code {
+    public string TextValue { get; set; }
+    string sampleText = "";
+}
