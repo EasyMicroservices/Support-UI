@@ -39,4 +39,8 @@
     max-width: 1200px;
     margin: 0 auto;
 }
->>>>>>> 2e16d2b (change gitignore file)
+.mainAddTicket{
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}

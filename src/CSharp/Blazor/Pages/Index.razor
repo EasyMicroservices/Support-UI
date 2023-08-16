@@ -1,62 +1,52 @@
-﻿@page "/"
+﻿@page "/AddTicket"
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2e16d2b (change gitignore file)
 <PageTitle>ثبت تیکت</PageTitle>
-
 <div class="mainAddTicket container">
+    <h1>ثبت تیکت</h1>
     <MudGrid>
 <<<<<<< HEAD
         <MudItem xs="12" sm="6">
             <MudTextField @bind-Value="TextValue" Label="عنوان" Variant="Variant.Outlined"></MudTextField>
         </MudItem>
         <MudItem xs="12" sm="6">
-            <MudSelect T="double" Label="دپارتمان" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
-                <MudSelectItem T="double" Value="4.50" />
-                <MudSelectItem T="double" Value="4.99" />
-                <MudSelectItem T="double" Value="3.60" />
+            <MudSelect T="string" Label="دپارتمان" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                <MudSelectItem Value="@("فنی")" />
+                <MudSelectItem Value="@("مالی")" />
+                <MudSelectItem Value="@("اداری")" />
             </MudSelect>
         </MudItem>
         <MudItem xs="12">
-            <MudTextField T="string" Label="شرح درخواست" Variant="Variant.Outlined" Text="@sampleText" Lines="3" />
+            <MudTextField T="string" Label="شرح درخواست" Variant="Variant.Outlined" Text="@sampleText" Lines="6" />
         </MudItem>
-        
-=======
-        <MudItem xs="12">
-            <MudTextField @bind-Value="TextValue" Label="Outlined" Variant="Variant.Outlined"></MudTextField>
-        </MudItem>
-        <MudItem xs="12" sm="6">
-            <MudTextField @bind-Value="TextValue" Label="Outlined" Variant="Variant.Outlined"></MudTextField>
-        </MudItem>
-        <MudItem xs="12" sm="6">
-            <MudTextField @bind-Value="TextValue" Label="Outlined" Variant="Variant.Outlined"></MudTextField>
-        </MudItem>
-        <MudItem xs="6" sm="3">
-            <MudTextField @bind-Value="TextValue" Label="Outlined" Variant="Variant.Outlined"></MudTextField>
-        </MudItem>
-        <MudItem xs="6" sm="3">
-            <MudTextField @bind-Value="TextValue" Label="Outlined" Variant="Variant.Outlined"></MudTextField>
-        </MudItem>
-        <MudItem xs="6" sm="3">
-            <MudTextField @bind-Value="TextValue" Label="Outlined" Variant="Variant.Outlined"></MudTextField>
-        </MudItem>
-        <MudItem xs="6" sm="3">
-            <MudTextField @bind-Value="TextValue" Label="Outlined" Variant="Variant.Outlined"></MudTextField>
-        </MudItem>
->>>>>>> 2e16d2b (change gitignore file)
     </MudGrid>
+    <MudItem Style="text-align: end">
+        <MudButton Disabled="@_processing" OnClick="ProcessSomething" Variant="Variant.Filled" Color="Color.Primary">
+            @if (_processing)
+            {
+                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                <MudText Class="ms-2">در حال ارسال</MudText>
+            }
+            else
+            {
+                <MudText>ارسال</MudText>
+            }
+        </MudButton>
+    </MudItem>
 </div>
 
 @code {
-    public string TextValue { get; set; }
-<<<<<<< HEAD
+    public string ? TextValue { get; set; }
     string sampleText = "";
+    private bool _processing = false;
+
+    async Task ProcessSomething()
+    {
+        _processing = true;
+        await Task.Delay(2000);
+        _processing = false;
+    }
 }
-=======
-<h1>Hello, world!</h1>
->>>>>>> 05d4eea (Creating new project of support)
-=======
-}
->>>>>>> 2e16d2b (change gitignore file)
