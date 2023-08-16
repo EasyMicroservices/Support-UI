@@ -26,7 +26,21 @@
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+<<<<<<< HEAD
+<<<<<<< HEAD
 .container{
     max-width: 1200px;
     margin: 0 auto;
+}
+=======
+>>>>>>> 05d4eea (Creating new project of support)
+=======
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.mainAddTicket{
+    display: flex;
+    flex-direction: column;
+    gap: 32px
 }

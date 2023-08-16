@@ -6,9 +6,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2e16d2b (change gitignore file)
   <ItemGroup>
     <PackageReference Include="MudBlazor" Version="6.7.0" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="1.0.8" />
   </ItemGroup>
 
+<<<<<<< HEAD
+=======
+>>>>>>> 05d4eea (Creating new project of support)
+=======
+>>>>>>> 2e16d2b (change gitignore file)
 </Project>
