@@ -22,13 +22,6 @@ dev_dependencies:
 
 flutter:
   fonts:
-    - family: IranYekan
+    - family: icomoon
       fonts:
-        - asset: assets/fonts/IRANYekanMobileBlack.ttf
-        - asset: assets/fonts/IRANYekanMobileBold.ttf
-        - asset: assets/fonts/IRANYekanMobileExtraBlack.ttf
-        - asset: assets/fonts/IRANYekanMobileExtraBold.ttf
-        - asset: assets/fonts/IRANYekanMobileLight.ttf
-        - asset: assets/fonts/IRANYekanMobileMedium.ttf
-        - asset: assets/fonts/IRANYekanMobileRegular.ttf
-        - asset: assets/fonts/IRANYekanMobileThin.ttf
+        - asset: assets/fonts/icomoon.ttf
