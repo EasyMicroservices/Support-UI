@@ -1,4 +1,4 @@
-class AppStrings{
+class ShowStrings{
   static const String myTickets = 'تیکت های من';
   static const String id = 'ID';
   static const String ticketName = 'عنوان تیکت';
@@ -8,4 +8,5 @@ class AppStrings{
   static const String lastModificationTime = 'آخرین تاریخ ویرایش';
   static const String status = 'وضعیت';
   static const String searchText = 'جستجو در عنوان و شناسه تیکت';
+  static const String registerNewTicket = 'ثبت تیکت جدید';
 }
